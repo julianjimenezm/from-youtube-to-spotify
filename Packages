@@ -1,0 +1,6 @@
+You need to have the following packages installed 
+
+requests
+youtube_dl
+google-auth-oauthlib
+google-api-python-client
