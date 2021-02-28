@@ -153,8 +153,7 @@ class FromYoutubeToSpotify:
         # Getting URIs (Spotify Uniform Resources Identifiers)
         URIs = []
         for song, info in self.my_dict.items():
-            spotify_url = self.search_songs(info["song_name"], info["artist"])
-            uris.append(spotify_url)
+        URIs.append(info["spotify_uri"])
                
         playlist_id = self.playlist()
 
