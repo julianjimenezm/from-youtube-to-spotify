@@ -1,6 +1,6 @@
 You need to have the following packages installed 
 
 requests
-youtube_dl
-google-auth-oauthlib
+youtube_dl == 2021.02.04.1-2
+google-auth-oauthlib == 0.4.2-1
 google-api-python-client
