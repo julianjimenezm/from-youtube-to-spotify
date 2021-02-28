@@ -151,7 +151,10 @@ class FromYoutubeToSpotify:
         self.fav_videos()
         
         # Getting URIs (Spotify Uniform Resources Identifiers)
-        URIs = [info["spotify_uri"] for song, info in self.my_dict.items()]
+        URIs = []
+        for song, info in self.my_dict.items():
+            spotify_url = self.search_songs(info["song_name"], info["artist"])
+            uris.append(spotify_url)
                
         playlist_id = self.playlist()
 
