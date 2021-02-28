@@ -107,7 +107,7 @@ class FromYoutubeToSpotify:
     def search_songs(self, song_name, artist):
         """Spotify search for an item end-point"""
        
-        url = f"https://api.spotify.com/v1/search?q={song_name}%20{artist}&type=track%2Cartist&market=US&limit=10&offset=0"
+        url = f"https://api.spotify.com/v1/search?q={song_name}%20{artist}&type=track%2Cartist&market=US&limit=10&offset=5"
         
         response = requests.get(
             url,
