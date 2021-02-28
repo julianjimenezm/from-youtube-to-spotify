@@ -28,7 +28,7 @@ class FromYoutubeToSpotify:
         self.token = spotify_token
         self.my_dict = {}
         
-        #
+        
     def main_client(self):
         """ Log Into Youtube client, Copied from Youtube Data API """
         # Disable OAuthlib's HTTPS verification when running locally.
@@ -151,13 +151,11 @@ class FromYoutubeToSpotify:
         self.fav_videos()
         
         # Getting URIs (Spotify Uniform Resources Identifiers)
-        URIs = [infos["spotify_uri"]
-                for song, infos in self.my_dict.items()]
-
-    
+        URIs = [info["spotify_uri"] for song, info in self.my_dict.items()]
+               
         playlist_id = self.playlist()
 
-        # Add all songs into new playlist
+        # Add all songs into the new playlist
         request_data = json.dumps(URIs)
 
         url = f"https://api.spotify.com/v1/playlists/{playlist_id}/tracks"
