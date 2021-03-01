@@ -1,6 +1,4 @@
 
-# NOTE/ After somes days using this code (running correctly) im having problems with the spotifys uris ( IndexError: List index out of range" )
-
 import json
 import os
 import requests
