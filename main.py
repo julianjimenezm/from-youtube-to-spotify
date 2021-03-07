@@ -54,6 +54,7 @@ class FromYoutubeToSpotify:
         
         request = self.youtube.videos().list(
             part="snippet,contentDetails,statistics",
+            maxResults = 30
             myRating="like"
         )
         response = request.execute()
