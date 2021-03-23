@@ -2,7 +2,7 @@
 
 # SETUP
 
-1. Config YouTube data API:
+1.  Google cloud Api Services Config - connection:
 
     - Activate YouTube data API (v3) from your google account.
      Google for developpers / API Services > Create a new project 
@@ -10,7 +10,7 @@
    - Create your own credentials, for this case we need a request credential (Aouth 2.0 ID client)
      got your app desktop credential > download your own client_secret.json file.
     
-2.  Getting your client connection:
+2.  Config YouTube data API / Getting your client connection:
 
      - Go to > use cases and got snippets > resource-videos > method-list > list my_liked_videos > Python Tab.
      - (https://developers.google.com/youtube/v3/code_samples/code_snippets?apix=true) and search Python tab.
